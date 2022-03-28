@@ -1,22 +1,19 @@
-import * as Styled from './styled'
-import Button from '../../dumbs/Button'
-import Image from '../../dumbs/Image/Image'
-import logoSrc from '../../../assets/logo.png'
-import SearchInput from '../SearchInput'
+import * as Styled from "./styled";
+import logoSrc from "../../../assets/logo.png";
 
 function Header(props) {
-  return(
+  return (
     <>
       <Styled.Header>
-        <Image src={logoSrc} />
-        <SearchInput />
+        <Styled.Logo src={logoSrc} />
+        <Styled.Input />
         <div>
-          <Button>Entrar</Button>
-          <Button>Cadastrar</Button>
+          <Styled.ButtonLogin>Entrar</Styled.ButtonLogin>
+          <Styled.ButtonRegister>Cadastrar</Styled.ButtonRegister>
         </div>
       </Styled.Header>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

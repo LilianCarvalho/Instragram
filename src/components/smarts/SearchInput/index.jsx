@@ -1,9 +1,13 @@
-import Input from '../../dumbs/Input'
+import * as Styled from "./styled";
 
 function SearchInput(props) {
-  return(
-    <Input value={props.value} onChange={props.onChange} placeholder="Pesquisar" />
-  )
+  return (
+    <Styled.SearchInput
+      value={props.value}
+      onChange={props.onChange}
+      placeholder="Pesquisar"
+    />
+  );
 }
 
-export default SearchInput
+export default SearchInput;
